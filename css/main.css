@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(116, 116, 116, 0.507);
+}
+
+.logo-menu {
+    width: 250px;
+    height: 120px;
+    margin-left: 30px;
+}
+
+.menu-content ul {
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.menu-content ul li {
+    list-style: none;
+}
+
+.menu-content ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu-content ul li a:hover {
+    color: rgb(0, 255, 128);
+}
+
+.intro h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+.intro-content h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.btn-chamado {
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    background: black;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-chamado:hover {
+    background: white;
+    border: 2px solid black;
+    transition: all 240ms ease-in-out;
+    color: black;
+}
+
+
+/*ANIMAÇÃO MENU OPTIONS*/
+
+.menu-content nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: white;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-content nav ul li a:hover::after {
+    width: 80%;
+    left: 10%;
+}
